@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  background-color: hsl(185, 41%, 84%);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  gap: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 290px;
+  border-radius: 20px;
+}
+
+.component {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.tip-container {
+  background-color: hsl(183, 100%, 15%);
+  height: 250px;
+  width: 300px;
+  position: relative;
+  border-radius: 0.9rem;
+  margin: 20px 20px;
+}
+
+.tip-per-person,
+.tip-amount {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+.dollar {
+  margin: 10px 60px;
+  color: hsl(172, 67%, 45%);
+}
+
+.tip-per-person label br,
+.tip-amount label br {
+  margin: 10px 40px;
+}
+
+.tip-per-person span,
+.tip-amount span {
+  font-weight: bold;
+}
+
+.bill-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 20px;
+  position: relative;
+  width: 290px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* width: 250px; */
+}
+
+.input-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input {
+  background-color: hsl(189, 41%, 97%);
+  padding: 5px 25px 5px 10px;
+  border: none;
+  width: 300px;
+  text-align: right;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+label {
+  font-weight: bold;
+}
+
+.btn {
+  padding: 0.3rem 2rem;
+  background-color: hsl(172, 67%, 45%);
+  font-weight: bolder;
+  font-size: large;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.btn-reset {
+  width: 210px;
+  margin: 50px 40px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  /* margin: auto; */
+  width: 280px;
+}
+.btn-percentage {
+  padding: 0.5rem 0.5rem;
+}
